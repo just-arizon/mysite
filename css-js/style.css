@@ -53,24 +53,36 @@
       height: 350px;
     }
 
+    body{
+        background-color: #FFFBFA;
+    }
     #navigation{
+        min-width: 349px;
         display: flex;
         justify-content: space-between;
         background-color: rgba(0, 0, 0, 0.494);
     }
 
-
+    .logo-container{
+        padding-top:20px;       
+        max-width: 349px;
+        background: #000;
+    }
 
     .logoSymbol{
         font-family: SpaceAge;
         font-size: 45px;
-        color: #fff;
+        color: #FFFBFA;
+        margin-left: 30px; 
         text-align: center;
         text-decoration: none;
+        font-weight: 900;
       }
 
       .navbar-nav__non-boostrap{
         display: flex;
+        max-width: 349px;
+        background: #000;
       }
       .nav-item__non-boostrap{
         margin: 30px;
@@ -79,5 +91,25 @@
       .nav-link__non-boostrap{
         color: #FFFBFA;
         font-family: 'Zabal',sans-serif;
-        font-size: 17px;
+        font-size: 25px;
+      }
+
+      .firstBtn button{
+        margin-top: 15px;
+        margin-right: 15px;
+        max-width: 349px;
+        width: 70px;
+        height: 55px;
+        background-color:#00d8c9;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-animation: jello-horizontal 0.9s both;
+          animation: jello-horizontal 0.9s both;
+      }
+
+      .firstBtn--link svg{
+        color: #FFFBFA;
+        font-size: 20px;
       }
