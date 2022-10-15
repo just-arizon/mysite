@@ -68,3 +68,16 @@
         text-align: center;
         text-decoration: none;
       }
+
+      .navbar-nav__non-boostrap{
+        display: flex;
+      }
+      .nav-item__non-boostrap{
+        margin: 30px;
+        list-style: none;
+      }
+      .nav-link__non-boostrap{
+        color: #FFFBFA;
+        font-family: 'Zabal',sans-serif;
+        font-size: 17px;
+      }
