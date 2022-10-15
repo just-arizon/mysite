@@ -66,7 +66,6 @@
     .logo-container{
         padding-top:20px;       
         max-width: 349px;
-        background: #000;
     }
 
     .logoSymbol{
@@ -82,7 +81,6 @@
       .navbar-nav__non-boostrap{
         display: flex;
         max-width: 349px;
-        background: #000;
       }
       .nav-item__non-boostrap{
         margin: 30px;
@@ -112,4 +110,92 @@
       .firstBtn--link svg{
         color: #FFFBFA;
         font-size: 20px;
+      }
+
+      @-webkit-keyframes jello-horizontal {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(1.15, 0.85, 1);
+                  transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+      @keyframes jello-horizontal {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(1.15, 0.85, 1);
+                  transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+
+      /* Navigation Mobile Responsiveness */
+      
+      @media screen and (max-width:480px){
+        .logoSymbol{
+            margin-left: 15px;
+        }
+        .firstBtn button{
+            width: 45px;
+            height: 40px;
+            margin-top: 20px;
+
+        }
+
+        .firstBtn--link svg{
+            font-size: 17px;
+          }
+
+        .navbar-nav__non-boostrap{
+            max-width: 349px;
+            margin-top: 12px;
+
+          }
+        .nav-item__non-boostrap{
+            margin: 20px;
+          }
       }
