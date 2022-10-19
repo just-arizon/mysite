@@ -60,7 +60,7 @@
         min-width: 349px;
         display: flex;
         justify-content: space-between;
-        background-color: rgba(0, 0, 0, 0.494);
+        background-color: #231E23;
     }
 
     .logo-container{
@@ -176,13 +176,20 @@
       /* Navigation Mobile Responsiveness */
       
       @media screen and (max-width:480px){
+        #navigation{
+            width: 100%;
+            min-width: 320px;
+            position: fixed;
+            bottom: 1px;
+
+        }
         .logoSymbol{
             margin-left: 15px;
         }
         .firstBtn button{
             width: 45px;
             height: 40px;
-            margin-top: 20px;
+            margin-top: 28px;
 
         }
 
