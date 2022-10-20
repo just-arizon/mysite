@@ -18,7 +18,7 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
-      /* border: 2px solid lightgreen; */
+      border: 2px solid lightgreen;
   }
   html{
     scroll-behavior: smooth;
@@ -233,6 +233,18 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
             height: 100vh;
             background: rgb(0,216,201);
             background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
+            display: grid;
+          }
+
+          header .intro{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+          .intro h1{
+            font-size: 30px;
+          }
+          header .intro--about h2{
             
           }
       }
