@@ -261,7 +261,7 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
           .nav-item__non-boostrap .nav-link__non-boostrap{
           }
           header{
-            height: 100vh;
+            height: 150vh;
             background: rgb(0,216,201);
             background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
             /* display: grid; */
@@ -295,7 +295,7 @@ div#wrapper{
 
 div.wrapper-container-one{
   max-width: 280px;
-  height: 250px;
+  height: 450px;
   background: rgba(255,255,255,.1);
   border-radius: 20px;
   border-left: 2px solid rgba(255,255,255,.5);
@@ -305,7 +305,7 @@ div.wrapper-container-one{
   transition: .9s ease-in-out;
   overflow: hidden;
   position: absolute;
-  
+  left: 30px;
 }
 
 div.wrapper-container-one::before{
@@ -344,7 +344,7 @@ div.wrapper-container-one > .message{
   position: relative;
   top: 40px;
   font-size: 14px;
-  font-family: 'Zabal',sans-serif;
+  font-family: 'DM Sans',sans-serif;
   color: #FFFBFA;
   text-align: center;
   line-height: 20px;
@@ -387,7 +387,38 @@ font-size: 50px;
     box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
   }
 
+} .message__icon{
+  position: relative;
+  top: 2rem;
+  left:30px;
 }
+.iconify.toolkits{
+font-size: 40px;
+margin-right: 13px;
+margin-bottom: 13px;
+color: #ddd;
+padding: 3px 8px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s ease;
+position: relative;
+display: inline-block;
+outline: none;
+border: none;
+background: #231E23;
+box-shadow: 0 5px #00d8c9;
+border-radius: 5px;
+}
+.iconify.toolkits:hover{
+  box-shadow: 0 3px #FFFBFA;
+  top: 1px;
+  color: #00d8c9;
+}
+.iconify.toolkits:active {
+  box-shadow: 0 0 #FFFBFA;
+  top: 5px;
+}
+
       }
 
       /*        */
@@ -473,10 +504,12 @@ font-size: 50px;
     font-size: 25px;
   }
   div.wrapper-container-one > .message{
+    width: 700px;
     position: relative;
-    top: 63px;
-    font-size: 20px;
-    font-family: 'Zabal',sans-serif;
+    top: 60px;
+    left: 45px;
+    font-size: 18.5px;
+    font-family: 'DM Sans',sans-serif;
     color: #FFFBFA;
     text-align: center;
     margin-bottom: 15px;
@@ -519,7 +552,7 @@ font-size: 50px;
   }
   .message__icon{
     position: relative;
-    top: 6rem;
+    top: 4.5rem;
     display: flex;
     justify-content: center;
     align-items:;
@@ -528,14 +561,52 @@ font-size: 50px;
   font-size: 40px;
   margin-right: 13px;
   color: #ddd;
+  padding: 3px 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #231E23;
+  box-shadow: 0 5px #00d8c9;
   }
   .iconify.toolkits:hover{
-    background-color: #00d8c9;
-    cursor: pointer;
-    border-radius: 3px;
+    box-shadow: 0 3px #FFFBFA;
+    top: 1px;
+    color: #00d8c9;
+  }
+  .iconify.toolkits:active {
+    box-shadow: 0 0 #FFFBFA;
+    top: 5px;
   }
   }
   
 
 
-  
+  /* .css-button-3d--sky {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #3a86ff;
+  box-shadow: 0 5px #4433ff;
+}
+.css-button-3d--sky:hover {
+  box-shadow: 0 3px #4433ff;
+  top: 1px;
+}
+.css-button-3d--sky:active {
+  box-shadow: 0 0 #4433ff;
+  top: 5px;
+} */
