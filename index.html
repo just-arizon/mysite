@@ -16,6 +16,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
      <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
  
      <!-- Animation -->
      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
@@ -82,18 +84,18 @@
       <div class="intro--container">
         <div id="wrapper">
 
-          <div></div>
+          <!-- <div></div> -->
           <div class="wrapper-container-one">
             <h2 class="wrapper-container-one-heading"> I'm Arinze</h2>
-
-            <p class="message">I'm a Full-Stack Developer | techBlogger and I would like to work with you.</p>
+            <p class="message"><em>I'm a Full-Stack Developer | techBlogger and I would like to work with you.</em>
+            </p>
             <p class="message">Here's my Stack</p>
             <div class="message__icon">
               <span class="iconify toolkits" data-icon="ic:outline-css"></span>
-
               <span class="iconify toolkits" data-icon="ph:file-html-fill"></span>
               <span class="iconify toolkits" data-icon="material-symbols:javascript-rounded"></span>
-              <span class="iconify toolkits" data-icon="fontisto:react"></span>
+              <strong><span class="iconify toolkits" data-icon="fontisto:react"></span>
+              </strong>
             </div>
           </div>
           
@@ -126,5 +128,19 @@
      </script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+   <script type="module">
+  import { annotate } from 'https://unpkg.com/rough-notation?module';
+  
+  const n2 = document.querySelector('em');
+  const n3 = document.querySelector('strong');
+
+  const a2 = annotate(n2, { type: 'box', color: '#00d8ca', iterations: 2, multiline: true,});
+
+  const a3 = annotate(n3, { type: 'circle', color: '#ffbfa', padding: 8 });
+
+  a2.show();
+  a3.hide();
+  </script>
 </body>
 </html>

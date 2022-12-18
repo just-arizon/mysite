@@ -106,7 +106,36 @@
         cursor: pointer;
         -webkit-animation: jello-horizontal 0.9s both;
           animation: jello-horizontal 0.9s both;
+        
       }
+
+  
+    
+
+      /* .css-button-3d--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #80ed99;
+  box-shadow: 0 5px #57cc99;
+}
+.css-button-3d--green:hover {
+  box-shadow: 0 3px #57cc99;
+  top: 1px;
+}
+.css-button-3d--green:active {
+  box-shadow: 0 0 #57cc99;
+  top: 5px;
+} */
 
       .firstBtn--link svg{
         color: #FFFBFA;
@@ -185,7 +214,7 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
       h1{
         color: #FFFBFA;
         font-size: 50px;
-        font-family: 'Zabal',sans-serif;
+        font-family: 'Koulen',cursive;
       }
 
       /* Navigation Mobile Responsiveness */
@@ -241,7 +270,7 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
           header .intro{
             position: relative;
             top: 30px;
-            margin-bottom: 18px;
+            margin-bottom: 13px;
             text-align: left;
           }
           .intro h1{
@@ -370,21 +399,18 @@ font-size: 50px;
 
   header .intro{
     position: relative;
-    top: 30px;
-    margin-bottom: 18px;
+    top: 25px;
+    margin-bottom: 14px;
     text-align: center;
   }
   .intro h1{
     font-size: 50px;
   }
-  header .intro--about h2{
+  /* header .intro--about h2{
     color: #FFFBFA;
     
-  }
+  } */
 
-  div.intro{
-    margin-bottom:5rem;
-  }
   div.intro--container{
     position:;
      display: grid;
@@ -393,14 +419,14 @@ font-size: 50px;
   }
   div#wrapper{
     width: 100%;
-    height: 500px;
+    height: 400px;
     z-index: 1;
    
   }
   
   div.wrapper-container-one{
-    min-width: 800px;
-    min-height: 400px;
+    min-width: 780px;
+    min-height: 350px;
     background: rgba(255,255,255,.1);
     border-radius: 20px;
     border-left: 2px solid rgba(255,255,255,.5);
@@ -410,7 +436,7 @@ font-size: 50px;
     transition: .9s ease-in-out;
     overflow: hidden;
     position:  ;
-    
+    margin-top: 2rem;
   }
   
   div.wrapper-container-one::before{
@@ -448,11 +474,12 @@ font-size: 50px;
   }
   div.wrapper-container-one > .message{
     position: relative;
-    top: 100px;
+    top: 63px;
     font-size: 20px;
     font-family: 'Zabal',sans-serif;
     color: #FFFBFA;
     text-align: center;
+    margin-bottom: 15px;
   }
   
   
@@ -461,8 +488,8 @@ font-size: 50px;
     justify-content: center;
     /* align-items: center; */
     width: 100%;
-    height: 200px;
-    margin-top: 7rem;
+    height: 100px;
+    margin-top: 1.5rem;
     position: absolute;
     right: 5px;
     z-index: 1;
@@ -477,31 +504,38 @@ font-size: 50px;
     border-radius: 50%;
    box-shadow: 0 0 0 0 #231E23;
    animation: pulse 1.3s infinite;
+   background:#231E23;
   }
+
   div.wrapper__sub-container a#arrow{
-  color: #FFFBFA;
-  font-size: 50px;
+    color: #FFFBFA;
+    font-size: 50px;
+    }
+    
+    @keyframes pulse {
+      to {
+        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+      }
+  }
+  .message__icon{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items:;
+  }
+  .iconify.toolkits{
+  font-size: 40px;
+  margin-right: 13px;
+  color: #ddd;
+  }
+  .iconify.toolkits:hover{
+    background-color: #00d8c9;
+    cursor: pointer;
+    border-radius: 3px;
+  }
   }
   
-  @keyframes pulse {
-    to {
-      box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
-    }
-}
-.message__icon{
-  position: relative;
-  top: 8rem;
-  display: flex;
-  justify-content: center;
-  align-items:;
-}
-.iconify.toolkits{
-font-size: 40px;
-margin-right: 13px;
-color: #ddd;
-}
-.iconify.toolkits:hover{
-  background-color: #00d8c9;
-  cursor: pointer;
-  border-radius: 3px;
-}
+
+
+  
