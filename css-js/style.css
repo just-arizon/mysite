@@ -54,8 +54,9 @@
     }
 
     body{
-        background-color: #FFFBFA;
-        min-height: 100vh;
+      background: rgb(0,216,201);
+      background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
+        max-height: 100vh;
     }
     #navigation{
         min-width: 349px;
@@ -108,34 +109,6 @@
           animation: jello-horizontal 0.9s both;
         
       }
-
-  
-    
-
-      /* .css-button-3d--green {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #80ed99;
-  box-shadow: 0 5px #57cc99;
-}
-.css-button-3d--green:hover {
-  box-shadow: 0 3px #57cc99;
-  top: 1px;
-}
-.css-button-3d--green:active {
-  box-shadow: 0 0 #57cc99;
-  top: 5px;
-} */
 
       .firstBtn--link svg{
         color: #FFFBFA;
@@ -258,12 +231,9 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
             margin: 20px;
 
           }
-          .nav-item__non-boostrap .nav-link__non-boostrap{
-          }
+         
           header{
-            height: 150vh;
-            background: rgb(0,216,201);
-            background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
+            max-height: 100vh;
             /* display: grid; */
           }
 
@@ -275,6 +245,7 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
           }
           .intro h1{
             font-size: 30px;
+            margin-left: 15px;
           }
           header .intro--about h2{
             color: #FFFBFA;
@@ -282,15 +253,17 @@ background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, r
 /* Other */
 
 div.intro--container{
-  position: relative;
+  height:100vh;
+  /* background-color: yellow; */
 }
 div#wrapper{
   width: 100%;
-  height: 300px;
+  height: 500px;
   position: relative;
   top: 3rem;
-  padding-left: 1.5rem;
-  z-index: 1;
+  /* padding-left: 1.5rem; */
+  /* z-index: 1; */
+  /* background-color: blue; */
 }
 
 div.wrapper-container-one{
@@ -304,8 +277,7 @@ div.wrapper-container-one{
   backdrop-filter: blur(5px);
   transition: .9s ease-in-out;
   overflow: hidden;
-  position: absolute;
-  left: 30px;
+  margin: 0 auto;
 }
 
 div.wrapper-container-one::before{
@@ -358,18 +330,18 @@ div.wrapper-container-one > .message{
 div.wrapper-container-two{
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   width: 100%;
   height: 200px;
-  margin-top: 18rem;
-  position: absolute;
-  right: 5px;
+  /* margin-top: -3rem; */
+  position: relative;
   z-index: 1;
+  /* background-color:red ; */
 }
 
 div.wrapper__sub-container{
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +351,7 @@ div.wrapper__sub-container{
 }
 div.wrapper__sub-container a#arrow{
 color: #FFFBFA;
-font-size: 50px;
+font-size: 40px;
 }
 
 @keyframes pulse {
