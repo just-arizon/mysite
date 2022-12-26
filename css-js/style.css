@@ -270,6 +270,16 @@
         .logoSymbol{
             margin-left: 15px;
         }
+
+        .sub-menu{
+          height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-right: 30px;
+        }
+
         .firstBtn button{
             width: 40px;
             height: 35px;
@@ -446,6 +456,10 @@ font-size: 40px;
     box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
   }
 
+}
+
+main{
+  
 }
       }
 
