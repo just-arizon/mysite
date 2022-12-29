@@ -431,7 +431,7 @@ border-radius: 5px;
   top: 5px;
 }
 
-div.wrapper-container-two{
+/* div.wrapper-container-two{
   display: flex;
   justify-content: center;
   width: 100%;
@@ -439,23 +439,20 @@ div.wrapper-container-two{
   position: relative;
   z-index: 200;
   /* background-color:red ; */
-}
 
-div.wrapper__sub-container{
-  width: 60px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  border-radius: 50%;
+
+.hamburger{
+  width: 80px;
+  height: 80px;
+  border-radius: 40%;
+  padding-top: 7px;
  box-shadow: 0 0 0 0 #00d8c9;
  animation: pulse 1.3s infinite;
 }
-div.wrapper__sub-container a#arrow{
+/* div.wrapper__sub-container a#arrow{
 color: #FFFBFA;
 font-size: 40px;
-}
+} */
 
 @keyframes pulse {
   to {
