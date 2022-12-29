@@ -57,8 +57,8 @@
     body{
       background: rgb(0,216,201);
       background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
-        /* min-width: 100vw; */
-        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
         overflow-x: hidden;
     }
     #navigation{
@@ -69,7 +69,7 @@
     }
 
     .logo-container{
-        padding-top:20px;       
+        padding-top:22px;       
         max-width: 349px;
     }
 
@@ -185,7 +185,7 @@
 
       header{
         width: 100%;
-        height: 85vh;
+        height: 100vh;
         min-height: 100vh;
         background: rgb(35,30,35);
         background: linear-gradient(180deg, rgba(35,30,35,1) 0%, rgba(37,37,37,1) 50%, rgba(0,216,201,1) 100%);
@@ -431,32 +431,23 @@ border-radius: 5px;
   top: 5px;
 }
 
-/* div.wrapper-container-two{
-  display: flex;
-  justify-content: center;
+div.wrapper-container-two{
   width: 100%;
-  height: 200px;
-  position: relative;
   z-index: 200;
-  /* background-color:red ; */
+  /* background-color: #fff; */
+}
 
 
 .hamburger{
   width: 80px;
-  height: 80px;
+  height: 60px;
   border-radius: 40%;
-  padding-top: 7px;
  box-shadow: 0 0 0 0 #00d8c9;
  animation: pulse 1.3s infinite;
 }
-/* div.wrapper__sub-container a#arrow{
-color: #FFFBFA;
-font-size: 40px;
-} */
-
 @keyframes pulse {
   to {
-    box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+    box-shadow: 0 0 0 1rem #ffffff03;
   }
 
 }
@@ -464,18 +455,13 @@ main{
   margin-top: 9rem;
 }
 article{
-  /* width: 1000vw; */
-  /* height: 100vh; */
   background-color: #ddd;
   position: relative;
  
 }
 
 .section-containers{
-  width: 100vw;         
-  min-height: 100vh;
-  margin-bottom: 30px;
-  background-color: #231E23;
+
 }
       }
 
