@@ -9,12 +9,20 @@ window.addEventListener("load", () =>{
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const logoLink = document.querySelector("logoSymbol");
+const projectMenu = document.querySelector("main");
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active")
-})
+});
+
 
 document.querySelectorAll(".nav-linkd").forEach(n => n.addEventListener("click", () => {
   navMenu.classList.remove("active")
-
+  // projectMenu.classList.toggle("show")
 }))
+
+// logoLink.addEventListener("click", () => {
+//   projectMenu.classList.remove("")
+
+// });
