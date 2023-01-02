@@ -57,9 +57,9 @@
     body{
       background: rgb(0,216,201);
       background: linear-gradient(180deg, rgba(0,216,201,1) 0%, rgba(37,37,37,1) 40%, rgba(35,30,35,1) 100%);
-        width: 100vw;
+        width: 100%;
         height: 100vh;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     #navigation{
         min-width: 349px;
@@ -100,6 +100,20 @@
       .nav-link__non-boostrap:hover{
         color: #00d8c9;
       }
+      #navigation span.wrapper-container-two{
+        width: 100px;
+        height: 100px;
+        /* background-color: #ddd; */
+      }
+      .hamburger{
+   
+}
+
+@keyframes pulse {
+  to {
+   
+  }
+}
 
       .firstBtn button{
         margin-top: 15px;
@@ -431,26 +445,37 @@ border-radius: 5px;
   top: 5px;
 }
 
-div.wrapper-container-two{
-  width: 100%;
+span.wrapper-container-two{
+  max-width: 549px;
   z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-color: #fff; */
 }
-
-
-.hamburger{
-  width: 80px;
-  height: 60px;
-  border-radius: 40%;
- box-shadow: 0 0 0 0 #00d8c9;
- animation: pulse 1.3s infinite;
-}
-@keyframes pulse {
-  to {
-    box-shadow: 0 0 0 1rem #ffffff03;
+span.wrapper-container-two div.wrapper__sub-container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   box-shadow: 0 0 0 0 #00d8ca;
+   animation: pulse 1.3s infinite;
+   /* background:#231E23; */
   }
 
-}
+  div.wrapper__sub-container a#arrow{
+    color: #FFFBFA;
+    font-size: 30px;
+    }
+    
+    @keyframes pulse {
+      to {
+        box-shadow: 0 0 0 1rem #00d8ca;
+      }
+  }
+
 main{
   margin-top: 9rem;
 }
@@ -558,26 +583,24 @@ article{
   }
   
   
-  div.wrapper-container-two{
+  span.wrapper-container-two{
     display: flex;
     justify-content: center;
     /* align-items: center; */
     width: 100%;
     height: 100px;
-    margin-top: 1.5rem;
-    position: absolute;
-    right: 5px;
+    padding-top: 1rem;
     z-index: 1;
   }
   
-  div.wrapper__sub-container{
-    width: 90px;
-    height: 90px;
+ span.wrapper-container-two div.wrapper__sub-container{
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-   box-shadow: 0 0 0 0 #231E23;
+   box-shadow: 0 0 0 0 #00d8ca;
    animation: pulse 1.3s infinite;
    background:#231E23;
   }
@@ -589,7 +612,7 @@ article{
     
     @keyframes pulse {
       to {
-        box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.01);
+        box-shadow: 0 0 0 1rem #00d8ca;
       }
   }
   .message__icon{
@@ -744,25 +767,22 @@ article{
   }
   
 
-    div.wrapper-container-two{
+    span.wrapper-container-two{
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      width: 100px;
       height: 100px;
-      margin-top: 4.5rem;
-      position: absolute;
-      right: 5px;
       z-index: 1;
     }
-    div.wrapper__sub-container{
+    span.wrapper-container-two div.wrapper__sub-container{
       width: 70px;
       height: 70px;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-     box-shadow: 0 0 0 0 #231E23;
+     box-shadow: 0 0 0 0 #00d8ca;
      animation: pulse 1.3s infinite;
      background:#231E23;
     }
@@ -899,15 +919,12 @@ box-shadow: 0 5px #00d8c9;
 }
 
 
-  div.wrapper-container-two{
+  span.wrapper-container-two{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100px;
     height: 100px;
-    margin-top: 4.5rem;
-    position: absolute;
-    right: 5px;
     z-index: 1;
   }
   div.wrapper__sub-container{
@@ -917,7 +934,7 @@ box-shadow: 0 5px #00d8c9;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-   box-shadow: 0 0 0 0 #231E23;
+   box-shadow: 0 0 0 0 #00d8ca;
    animation: pulse 1.3s infinite;
    background:#231E23;
   }
