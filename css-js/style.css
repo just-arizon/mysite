@@ -257,4 +257,15 @@ h3.footer.footer__yr{
           }
           .nav-item__non-boostrap .nav-link__non-boostrap{
           }
+
+          textarea{
+            width: 250px;
+          }
+          
+               footer > h2{
+                font-size: 16px;
+               }
+               footer h2 span.foot-style{
+                font-size: 17px;
+               }
       }
