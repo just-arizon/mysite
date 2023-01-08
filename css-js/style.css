@@ -281,18 +281,14 @@ div.nav-menu {
   padding: 0 25px;
 }
 /* Blog Section */
-article {
-  min-height: 100vh;
-  width: 100%;
-  
-}
-article .blog {
+
+ .blog {
   display: flex;
   flex-direction: column;
   background-color: #231e23;
   /* background-color: #ddd; */
 }
-article .blog .intro {
+ .blog .intro {
   display: flex;
   justify-content: center;
   /* background-color: #ddd;         */
@@ -395,9 +391,7 @@ article .blog .intro {
   /* myServices */
   section.services{
     position: relative;
-    background-image: url(../images/wickedbackground.png);
-    background-position: center;
-    background-size: cover;
+   
     /* border-right-color: #ddd; */
     display: flex;
     flex-direction: column;
@@ -407,32 +401,41 @@ article .blog .intro {
   .services .intro{
     padding-left: 20px;
     padding-top: 20px;
-    border: 2px solid black;
+    background-color: #231e23;
   }
   .services .intro h1{
-    color: #231e23;
+    color: #fffbfa;
   }
  .services .myservice-container{
   width: 100%;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
+   background-image: url(../images/wickedbackground.png);
+    background-position: center;
+    background-size: cover;
   flex-wrap: wrap;
   flex-direction: row;
  } 
 .myservice-container__wrapper-one{
   width: 200px;
   flex: 1;
+  /* background-color: salmon; */
 }
 .myservice-container__wrapper-two{
   width: 200px;
   flex: 1;
+  /* background-color: wheat; */
 }
 .myservice-container__wrapper-three{
 width: 200px;
  flex: 1;
+ /* background-color: skyblue; */
 }
 
-article .myservice--wrap{
-  max-width: 350px;
+.myservice--wrap{
+  width: 500px;
   height: 400px;
   padding: 20px;
   border-radius: 20px;
@@ -441,8 +444,32 @@ article .myservice--wrap{
   box-shadow: 10px 10px 30px rgba(27, 26, 26, 0.5);
   backdrop-filter: blur(5px);
   transition: 0.9s ease-in-out; 
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.myservice--wrap__svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  /* background-color: salmon; */
+}
+.svg-container{
+  width: 100px;
+  height: 100px;
+  background-color: #231e23;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 50%;
+}
+.myservice--wrap__svg .wrap-svg{
+  color:#fffbfa ;
+  font-size: 50px;
+}
+.myservice--wrap__pg p{
+  font-family: "DM Sans",sans-serif;
 }
 /* Navigation Mobile Responsiveness */
 
@@ -613,14 +640,11 @@ article .myservice--wrap{
   }
 
   span.wrapper-container-two {
-    /* max-width: 349px; */
     z-index: 200;
     display: flex;
     justify-content: center;
     flex-shrink: 70px;
-    /* align-items: center; */
-    padding-top: 1.3rem;
-    /* background-color: #fff; */
+    padding-top: 1.7rem;
   }
   span.wrapper-container-two div.wrapper__sub-container {
     width: 35px;
@@ -631,12 +655,11 @@ article .myservice--wrap{
     border-radius: 50%;
     box-shadow: 0 0 0 0 #231e23;
     animation: pulse .7s infinite;
-    /* background:#231E23; */
   }
 
   div.wrapper__sub-container a#arrow {
     color: #fffbfa;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   @keyframes pulse {
@@ -652,10 +675,7 @@ article .myservice--wrap{
     background-color: #231e23;
     /* background-color: #ddd; */
   }
-  article {
-    /* min-height: 200vh;
-    min-width: 100vw; */
-  }
+
   .blog .wrapper-of-blog {
     padding-top: 1rem;
     display: flex;
@@ -710,14 +730,102 @@ article .myservice--wrap{
     top: 5px;
     padding: 0 25px;
   }
+  .services .myservice-container{
+  width: 100%;
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+ }
+.myservice-container__wrapper-one{
+  
+  /* background-color: salmon; */
+}
+.myservice-container__wrapper-two{
+  /* background-color: #fff; */
+}
+.myservice-container__wrapper-three{
+  /* background-color: wheat; */
+}
+ .myservice--wrap{
+  max-width: 450px;
+  width: 280px;
+  min-height: 470px;
+  margin: 50px;
+  overflow: hidden;
+ }
+ .myservice--wrap::before {
+    content: "";
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.8s ease-out;
+    transform: skewX(45deg) translateX(800px);
+    animation: shiny 2s ease 2s;
+  }
+ .myservice--wrap:hover::before {
+    transform: skewX(45deg) translateX(-650px);
+  }
+
+  @keyframes shiny {
+    from {
+      transform: skewX(45deg) translateX(800px);
+    }
+    to {
+      transform: skewX(45deg) translateX(-650px);
+    }
+  }
+
 }
 
+/* myPhone responsiveness */
+@media screen and (max-width: 349px) {
+
+  span.wrapper-container-two div.wrapper__sub-container {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    box-shadow: 0 0 0 0 #231e23;
+    animation: pulse .7s ;
+  }
+  @keyframes pulse {
+    to {
+      box-shadow: 0 0 0 .8rem #00d8ca84;
+    }
+  }
+/* myService section */
+ .myservice--wrap{
+  max-width: 300px;
+  min-height: 470px;
+  margin: 30px;
+  overflow: hidden;
+ }
+}
+/* Other phones taking into consideration */
+@media screen and (max-width: 339px) {
+
+
+
+/* myService section */
+ .myservice--wrap{
+  max-width: 300px;
+  min-height: 470px;
+  margin: 20px;
+  overflow: hidden;
+ }
+}
 /*        */
 
 @media screen and (min-width: 1024px) {
   header {
     min-height: 100vh;
   }
+ 
 
   header .intro {
     position: relative;
@@ -728,10 +836,7 @@ article .myservice--wrap{
   .intro h1 {
     font-size: 50px;
   }
-  /* header .intro--about h2{
-    color: #FFFBFA;
-    
-  } */
+ 
 
   div.intro--container {
     /* position:; */
@@ -806,7 +911,6 @@ article .myservice--wrap{
   span.wrapper-container-two {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     width: 100%;
     height: 100px;
     padding-top: 1rem;
@@ -871,18 +975,21 @@ article .myservice--wrap{
     flex-direction: column;
   }
       /* Blog Section */
-article {
-    max-height: 100vh;
-    min-width: 100vw;
-}
-      /* myServices Section */
-    section.services{
-    position: relative;
-   
-  }
-}
 
-@media screen and (min-width: 768px) {
+      /* myServices Section */
+
+  .myservice--wrap{
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 500px;
+  /* margin: 20px; */
+  overflow: hidden;
+ }
+}
+/* @media screen and (min-width: 968px) {
+
+} */
+@media screen and (min-width: 775px) {
   div.intro--container {
     display: grid;
     grid-template-rows: auto auto;
@@ -1027,11 +1134,6 @@ article {
     }
   }
     /* Blog Section */
-/* article {
-    position: relative;
-    height: 200vh;
-    min-width: 100vw;
-} */
 article .blog {
   display: flex;
   flex-direction: column;
@@ -1040,6 +1142,41 @@ article .blog {
   .wrapper-of-blog__container-3 .sub-menu-two {
     flex-direction: column;
   }
+
+  /* myService Section */
+  .services .myservice-container{
+   /* width: 100%;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+   background-image: url(../images/wickedbackground.png);
+    background-position: center;
+    background-size: cover;
+  flex-wrap: wrap;
+  flex-direction: row; */
+ }
+  .myservice-container__wrapper-one{
+     width: 400px;
+     flex: 1;
+  /* background-color: salmon; */
+}
+.myservice-container__wrapper-two{
+  width: 400px;
+     flex: 1;
+  /* background-color: #fff; */
+}
+.myservice-container__wrapper-three{
+  width: 400px;
+  flex: 1;
+  /* background-color: wheat; */
+}
+
+   .myservice--wrap{
+  /* width: 300px;
+  min-height: 500px;
+  margin: 20px;
+  overflow: hidden; */
+ }
 }
 
 @media screen and (min-width: 500px) {
@@ -1189,11 +1326,8 @@ article .blog {
     }
   }
   /* Blog Section */
-article {
-    /* min-height: 200vh;
-    min-width: 100vw; */
-}
-article .blog {
+
+.blog {
   display: flex;
   flex-direction: column;
   background-color: #231e23;
@@ -1207,4 +1341,30 @@ article .blog {
     top: 0;
    
   }
+
+   /* myService Section */
+   section.services div.myservice-container{
+     height: 300vh;
+ }
+.myservice-container__wrapper-one{
+     width: 400px;
+     flex: 1;
+  /* background-color: red; */
+}
+.myservice-container__wrapper-two{
+  width: 400px;
+     flex: 1;
+  /* background-color: #fff; */
+}
+.myservice-container__wrapper-three{
+  width: 400px;
+     flex: 1;
+  /* background-color: wheat; */
+}
+   .myservice--wrap{
+  width: 400px;
+  min-height: 500px;
+  margin: 50px;
+  overflow: hidden;
+ }
 }
