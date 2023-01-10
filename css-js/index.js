@@ -19,11 +19,6 @@ hamburger.addEventListener("click", () => {
 document.querySelectorAll(".nav-linkd").forEach((n) =>
   n.addEventListener("click", () => {
     navMenu.classList.remove("active");
-    // projectMenu.classList.toggle("show")
   })
 );
 
-// logoLink.addEventListener("click", () => {
-//   projectMenu.classList.remove("")
-
-// });
